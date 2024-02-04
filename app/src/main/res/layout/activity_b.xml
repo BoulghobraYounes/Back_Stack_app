@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_activity_b"
+    tools:context="com.example.backstackapp.Activity_B"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/activity_a"
+        android:id="@+id/textViewInstanceValue"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:text="@string/start_activity_a"
+        android:id="@+id/buttonStartActivityA"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/start_activity_b"
+        android:id="@+id/buttonStartActivityB"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/start_activity_c"
+        android:id="@+id/buttonStartActivityC"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/start_activity_d"
+        android:id="@+id/buttonStartActivityD"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_width="match_parent"
+            android:id="@+id/textViewTaskInfo"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#637A9F"/>
+    </ScrollView>
+</LinearLayout>
