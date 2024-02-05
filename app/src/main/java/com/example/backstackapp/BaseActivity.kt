@@ -21,11 +21,10 @@ open class BaseActivity: AppCompatActivity() {
 
     protected fun startActivity(context: Context, targetActivity: Class<*> ) {
         val intent = Intent(context, targetActivity)
+        if (targetActivity == Activity_B::class.java) {
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        }
         context.startActivity(intent)
-    }
-
-    protected fun getNumberOfTasks(): Int {
-        return activityManager.appTasks.size
     }
 
     @RequiresApi(Build.VERSION_CODES.Q)
